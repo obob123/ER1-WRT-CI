@@ -68,7 +68,7 @@ jobs:
       WRT_NAME: ${{ vars.WRT_NAME || 'OWRT' }}
       WRT_SSID: ${{ vars.WRT_SSID || 'OWRT' }}
       WRT_WORD: ${{ vars.WRT_WORD || '12345678' }}
-      WRT_IP: ${{ vars.WRT_IP || '192.168.10.1' }}
+      WRT_IP: ${{ vars.WRT_IP || '192.168.6.1' }}
       WRT_PW: ${{ vars.WRT_PW || '无' }}
       # 源码配置
       WRT_REPO: https://github.com/${{ matrix.SOURCE }}.git
