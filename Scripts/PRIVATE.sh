@@ -19,9 +19,8 @@
 CFG="$GITHUB_WORKSPACE/Config/$WRT_CONFIG.txt"
 if [ -f "$CFG" ]; then
     # ---- 第一步: 禁用所有设备 (默认全部关闭) ----
-    sed -i '/CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_.*=y/s/=y/=n/' "$CFG"
-    sed -i '/CONFIG_TARGET_DEVICE_qualcommax_ipq807x_DEVICE_.*=y/s/=y/=n/' "$CFG"
-    sed -i '/CONFIG_TARGET_DEVICE_mediatek_.*_DEVICE_.*=y/s/=y/=n/' "$CFG"
+    sed -i '/CONFIG_TARGET_DEVICE_mediatek_filogic_DEVICE_.*=y/s/=y/=n/' "$CFG"
+
 
     # ---- 第二步: 选择性启用需要的设备 ----
     sed -i 's/xiaomi_mi-router-ax3000t-stock=n/xiaomi_mi-router-ax3000t-stock=y/' "$CFG"
