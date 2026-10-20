@@ -24,8 +24,8 @@ if [ -f "$CFG" ]; then
     sed -i '/CONFIG_TARGET_DEVICE_mediatek_.*_DEVICE_.*=y/s/=y/=n/' "$CFG"
 
     # ---- 第二步: 选择性启用需要的设备 ----
-    sed -i 's/jdcloud_re-ss-01=n/jdcloud_re-ss-01=y/' "$CFG"
-    sed -i 's/jdcloud_re-cs-07=n/jdcloud_re-cs-07=y/' "$CFG"
+    sed -i 's/xiaomi_mi-router-ax3000t-stock=n/xiaomi_mi-router-ax3000t-stock=y/' "$CFG"
+    sed -i 's/xiaomi_mi-router-ax3000t-stock=n/xiaomi_mi-router-ax3000t-stock=y/' "$CFG"
 fi
 
 echo "==> 自定义配置补丁已应用!"
