@@ -55,7 +55,7 @@ jobs:
       matrix:
         include:
           # --- QUALCOMMAX IPQ60XX 平台 (与上游源码分支保持 main) ---
-          - CONFIG: IPQ60XX-WIFI-NO
+          - CONFIG: MEDIATEK-WIFI-YES
             SOURCE: VIKINGYFY/immortalwrt
             BRANCH: main
 
